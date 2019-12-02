@@ -1,0 +1,7 @@
+<div class="context-menu-panel">
+    <ul class="menu-item-block">
+        <li *ngFor="let item of items" class="menu-item-elem">
+            <span (click)="onContextMenuItemClick($event)" class="menu-item-label">{{item}}</span>
+        </li>
+    </ul>
+</div>

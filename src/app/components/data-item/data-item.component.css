@@ -1,0 +1,137 @@
+.del {
+    background: #cc0000;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    float: right;
+    vertical-align: middle;
+}
+
+.item {
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px #f4f4f4 dotted;
+}
+
+.is-complete {
+    text-decoration: line-through;
+}
+
+.slider-bar {
+    width: 500px;
+    background: rgba(15,34,70,1);
+    line-height:64px;
+}
+
+.main-panel {
+    overflow-x: hidden;
+}
+
+.menu-item {
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.menu-item-block {
+    list-style: none;
+    align-content: center;
+}
+
+.item-row {
+    line-height: 64px;
+}
+
+.left-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 2px;
+    background: #f4f4f4;
+    line-height: normal;
+}
+
+.mobile-user {
+    vertical-align: middle;
+}
+
+.left-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    line-height: normal;
+}
+
+.item-name {
+    list-style-type: none;
+    text-align: left;
+    align-content: center;
+    font: normal normal 14px/12px InterstateLight;
+    letter-spacing: 0.84px;
+    padding-top: 2px;
+    color: rgba(0, 45, 114, 1);
+    opacity: 0.79;
+}
+
+.item-subject {
+    position: relative;
+    top: 2px;
+    text-align: left;
+    padding-top: 3px;
+    font: normal normal 12px/18px Interstate-Light;
+    letter-spacing: 0.72px;
+    color: rgba(0, 45, 114, 1);
+    opacity: 1;
+}
+
+.item-headline {
+    position: relative;
+    text-align: left;
+    padding-top: 3px;
+    font: normal normal 12px/18px Interstate-Light;
+    letter-spacing: 0.72px;
+    color: rgba(0, 45, 114, 1);
+    opacity: 1;
+}
+
+.item-date {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    text-align: center;
+    font: normal 12px/10px Interstate-Light;
+    letter-spacing: 0.72px;
+    color: #676767;
+    opacity: 1;
+}
+
+.item-annex {
+    position: absolute;
+    top: 45px;
+    right: 5px;
+    text-align: center;
+    font: normal 15px/12px Interstate-Light;
+    letter-spacing: 0.72px;
+    color: #676767;
+    opacity: 1;
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+.swiper-slide {
+    color: #aaa;
+    background: #f4f4f4;
+}
+  
+.swiper-slide-active {
+    color: #333;
+    background-color: #aaa;
+    background: #f4f4f4;
+}

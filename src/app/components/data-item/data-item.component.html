@@ -1,0 +1,31 @@
+<div>
+    <swiper [config]="swipeConfig" [(index)]="index" (indexChange)="onIndexChange($event)">
+        <div *ngFor="let index of indexes">
+            <div *ngIf="index == 'grid'">
+                <div class='item-row'  id="{{'row-' + item.id}}" (click)="onItemClick($event)">
+                    <div class="left-icon">
+                       <i [ngClass]="item.iconClass" style="font-size:24px;"></i>
+                    </div>
+                    <div class="left-text">
+                      <div class="item-name">{{item.name}}</div>
+                      <div class="item-subject">{{item.subject}}</div>
+                      <div class="item-headline">{{item.headline}}</div>
+                      <div class="item-date">{{item.date}}</div>
+                      <div class="item-annex">{{item.annex}}</div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="index == 'slider'">
+                <div class="slider-bar">
+                    <div *ngFor="let menuitem of item.menuitems" class="menu-item">
+                        <img [src]="buildContextMenu(menuitem)"
+                             height=48
+                             [id]="getMenuItemName(menuitem)"
+                             (click)="onMenuItem($event)"
+                             style="vertical-align:middle;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </swiper>
+</div>

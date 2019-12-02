@@ -1,0 +1,5 @@
+<div>
+    <app-data-item *ngFor="let item of items" [item]="item" (onContextMenu)="onContextMenuOpen($event)">
+    </app-data-item>
+    <app-context-menu #contextmenu></app-context-menu>
+</div>
